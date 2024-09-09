@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mydiv {
+        height: 70vh;
+        width: 20vw;
+        border: 2px solid blue;
+        background-color:pink;
+        margin-left: 10%;
+        margin-top: 2%;
+        overflow-y: scroll;
+      }
+      .d1 {
+        height: 4vh;
+        width: 9vw;
+        background-color: rgb(115, 163, 184);
+        position: sticky;
+        text-align: center;
+        left: 80px;
+        top: 10px;
+        
+        
+      }
+      .l1 {
+        height: 4vh;
+        width: 4vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        
+        z-index: 1;
+      }
+      .r1 {
+        height: 4vh;
+        width: 9vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 140px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l2 {
+        height: 6vh;
+        width: 9vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r2 {
+        height: 4vh;
+        width: 8vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 155px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l3 {
+        height: 6vh;
+        width: 14vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r3 {
+        height: 6vh;
+        width: 14vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color:rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 65px;
+        top: 10px;
+        z-index: 1;
+      }
+      .d2 {
+        height: 4vh;
+        width: 10vw;
+        background-color: rgb(115, 163, 184);
+        position: sticky;
+        text-align: center;
+        left:70px;
+        top: 10px;
+      }
+      
+      .l4 {
+        height: 4vh;
+        width: 8vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r5 {
+        height: 4vh;
+        width: 5vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        text-align: center;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        left:200px;
+        top:20px;
+        z-index: 1;
+      }
+      .l6 {
+        height: 8vh;
+        width: 14vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r6 {
+        height: 4vh;
+        width: 8vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color:rgb(37, 211, 102);
+        text-align: center;
+        position: relative;
+        left:155px;
+        top:20px;
+        z-index: 1;
+      }
+      .l7 {
+        height: 6vh;
+        width: 14vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color:white;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r8 {
+        height: 8vh;
+        width: 14vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        text-align: center;
+        position: relative;
+        left: 65px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l8 {
+        height: 4vh;
+        width: 6vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r9 {
+        height: 4vh;
+        width: 3vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        text-align: center;
+        position: relative;
+        left: 230px;
+        top: 10px;
+        z-index: 1;
+      }
+      .d3 {
+        height: 4vh;
+        width: 10vw;
+        background-color:rgb(115, 163, 184);
+        text-align: center;
+        position: sticky;
+        left: 70px;
+        top: 10px;
+      }
+      .l9 {
+        height: 4vh;
+        width: 3vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color:white;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        top: 20px;
+        z-index: 1;
+      }
+      .l10 {
+        height: 6vh;
+        width: 10vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r10 {
+        height: 4vh;
+        width: 3vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 230px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r11 {
+        height: 4vh;
+        width: 5vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 200px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l11 {
+        height: 6vh;
+        width: 14vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r12 {
+        height: 4vh;
+        width: 7vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color:rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 170px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l12 {
+        height: 4vh;
+        width: 5vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r13 {
+        height: 4vh;
+        width: 9vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 140px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r14 {
+        height: 4vh;
+        width: 9vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 140px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l13 {
+        height: 4vh;
+        width: 3vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r15 {
+        height: 4vh;
+        width: 11vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 110px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l14 {
+        height: 4vh;
+        width: 4vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+      .r16 {
+        height: 4vh;
+        width: 13vw;
+        border: 50px;
+        border-bottom-left-radius: 20px;
+        background-color: rgb(37, 211, 102);
+        position: relative;
+        text-align: center;
+        left: 80px;
+        top: 10px;
+        z-index: 1;
+      }
+      .l15 {
+        height: 4vh;
+        width: 10vw;
+        border: 50px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        position: relative;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+     <h1>Chat Box</h1>
+    <div class="mydiv">
+      <div class="d1">
+        <p><i>Monday 03:00 PM</i></p>
+      </div>
+      <div class="l1">
+        <p>Heyy!!</p>
+      </div>
+      <div class="r1">
+        <p>Hii!
+          How are you?</p>
+      </div>
+      <div class="l2">
+        <p>Good!
+          What about you?</p>
+      </div>
+      <div class="r2">
+        <p>I am doing good.</p>
+      </div>
+      <div class="l3">
+        <p>How is your preparation for interview going? </p>
+      </div>
+      <div class="r3">
+        <p>Going good, doing last minute preparation.</p>
+      
+      </div>
+
+      <div class="d2">
+        <p><i>Tuesday 09:00 AM</i></p>
+      </div>
+      <div class="l4">
+        <p>Good to hear that.</p>
+      </div>
+      <div class="l4">
+        <p>Good Morning!</p>
+      </div>
+      <div class="r5">
+        <p>Morning!</p>
+      </div>
+      <div class="l6">
+        <p>I had a few doubts regarding interview questions would it be possible for you to help me out?</p>
+      </div>
+      <div class="r6">
+        <p>Yeah!, definitely.</p>
+      </div>
+      <div class="l7">
+        <p>What sort of questions can we expect from the recruiter?</p>
+      </div>
+      <div class="r8">
+        <p>They basically try to assess our subject knowledge along with our communication skills.</p>
+      </div>
+      <div class="l8">
+        <p>Achaa Okays</p>
+      </div>
+      <div class="r9">
+        <p>Yeah.</p>
+      
+      </div>
+      <div class="d3">
+        <p><i>Wednesday 02:00 PM</i></p>
+      </div>
+      <div class="l9">
+        <p>Heyy</p>
+      </div>
+      <div class="r10">
+        <p>Hey</p>
+      </div>
+      <div class="l10">
+        <p>I got an interview from Quadrant technologies!</p>
+      </div>
+      
+      <div class="r11">
+        <p>Thats great</p>
+      </div>
+      <div class="l11">
+        <p>Yeah, now i need to prepare for interview following your tips.</p>
+      </div>
+      <div class="r12">
+        <p>We will do well.</p>
+      </div>
+      <div class="l12">
+        <p>Hopefully.</p>
+      </div>
+      <div class="r13">
+        <p>Believe in yourself</p>
+      </div>
+      <div class="r14">
+        <p>and trust the process</p>
+      </div>
+      <div class="l13">
+        <p>yes!</p>
+      </div>
+      <div class="r15">
+        <p>Okay will catch up later</p>
+      </div>
+      <div class="l14">
+        <p>alright!</p>
+      </div>
+      <div class="r16">
+        <p>Bye! Have a great day ahead.</p>
+      </div>
+      <div class="l15">
+        <p>Bye, have a good day!</p>
+      </div>
+    </div>
+  </body>
+</html>
